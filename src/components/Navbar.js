@@ -50,12 +50,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className={'p-4'}>
-              <a href={'/newhardskills/courses'}>
+              <a href={'/courses'}>
                 Курсы
               </a>
             </li>
             <li className={'p-4'}>
-                <Link to={'/newhardskills/contract'}>
+                <Link to={'/contract'}>
                     Договор
                 </Link>
             </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className={'hidden lg:flex items-center'}>
-            <a href={'/'}>
+            <a href={'/newhardskills'}>
               <AiOutlineInstagram size={40}/>
             </a>
 
@@ -98,7 +98,7 @@ const Navbar = () => {
               <Link to={'/newhardskills/courses'} onClick={closeMobileMenu}>Курсы</Link>
             </li>
             <li className={'p-4 border-b border-gray-600'}>
-              <Link to={'/newhardskills/contract'} onClick={closeMobileMenu}>Договор</Link>
+              <Link to={'/contract'} onClick={closeMobileMenu}>Договор</Link>
             </li>
 
             <li className={'p-4'}>Контакты</li>

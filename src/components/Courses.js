@@ -48,7 +48,7 @@ const Courses = () => {
             </div>
            <div className={'flex justify-between flex-col'}>
              <h3 className={'text-2xl font-bold text-center py-8'}>{item.course_name}</h3>
-             <a href={'/newhardskills/courses/' + item.name}  className={'bg-[#24cd03] w-[200px] text-white text-center font-bold rounded-md font-medium mx-auto my-6 py-3'}>Подробнее</a>
+             <a href={'/courses/' + item.name}  className={'bg-[#24cd03] w-[200px] text-white text-center font-bold rounded-md font-medium mx-auto my-6 py-3'}>Подробнее</a>
            </div>
           </div>
         ))}
