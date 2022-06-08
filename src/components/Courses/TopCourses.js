@@ -22,8 +22,8 @@ const TopCourses = ({data}) => {
               <span className={'text-2xl md:text-xl text-[#24cd03] font-light'}>{data.day}</span>
               <span className={'text-2xl md:text-xl text-[#24cd03] font-light'}>{data.time}</span>
             </div>
-            <a href={'/'}
-               className={' bg-[#24cd03] w-full  rounded-md text-black font-bold mt-4   mx-auto p-3  hover:shadow-[#24cd03]/50 shadow-lg ease-in-out duration-500'}>Записаться</a>
+            <Link to={'/'}
+               className={' bg-[#24cd03] w-full  rounded-md text-black font-bold mt-4   mx-auto p-3  hover:shadow-[#24cd03]/50 shadow-lg ease-in-out duration-500'}>Записаться</Link>
           </div>
         </div>
 

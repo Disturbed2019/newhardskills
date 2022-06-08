@@ -22,7 +22,7 @@ const AppRoutes = () => {
           <Route path={'/courses/python'} element={<PythonPage/>}/>
           <Route path={'/courses/ba'} element={<BusinessPage/>}/>
           <Route path={'/courses/hr'} element={<RecruitingPage/>}/>
-          <Route path={'*'} element={<Navigate to={'/404'} replace />}/>
+          <Route path={'*'} element={<Navigate to={'/'} replace />}/>
       </Routes>
 
   );

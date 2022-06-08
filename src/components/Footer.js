@@ -1,13 +1,14 @@
 import React from 'react';
 import Logo from "../assets/images/logo.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className={'flex flex-col  max-w-[1240px] mx-auto px-4'}>
       <div className={'flex flex-col md:flex-row md:justify-between items-center '}>
-        <a href={'/newhardskills'} className={''}>
+        <Link to={'/'} className={''}>
           <img className={'w-[150px] sm:w-[200px]'} src={Logo} alt="logo" width={266} height={70}/>
-        </a>
+        </Link>
         <div className={'flex flex-col md:flex-row  justify-between items-center flex-1'}>
           <div className={'flex flex-1 items-center text-sm text-center p-8 m-2 order-1 md:order-none'}>
             <p>ООО «Нью ХардСкиллс»
@@ -19,11 +20,11 @@ const Footer = () => {
           </div>
           <div className={'flex flex-col items-center'}>
             <div className={'flex flex-col lg:flex-row m-2 font-bold'}>
-              <a href={'/newhardskills'} className={'inline p-2 hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</a>
-              <a href={'/newhardskills'} className={'inline p-2 hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</a>
+              <Link to={'/'} className={'inline p-2 hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</Link>
+              <Link to={'/'} className={'inline p-2 hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</Link>
             </div>
-            <a href={'/newhardskills'}
-               className={'text-center hover:text-[#24cd03] ease-in-out duration-300'}>newhardskills@mail.ru</a>
+            <Link to={'/'}
+               className={'text-center hover:text-[#24cd03] ease-in-out duration-300'}>newhardskills@mail.ru</Link>
           </div>
         </div>
       </div>

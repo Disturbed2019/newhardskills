@@ -45,9 +45,9 @@ const Navbar = () => {
             {/*  </a>*/}
             {/*</li>*/}
             <li className={'p-4'}>
-              <a href={'/newhardskills'}>
+              <Link to={'/'}>
                 О нас
-              </a>
+              </Link>
             </li>
             <li className={'p-4'}>
               <Link to={'/courses'}>
@@ -61,21 +61,21 @@ const Navbar = () => {
             </li>
 
             <li className={'p-4'}>
-              <a href={'/newhardskills'}>
+              <Link to={'/'}>
                 Контакты
-              </a>
+              </Link>
             </li>
           </ul>
           <div className={'hidden lg:flex items-center'}>
-            <a href={'/newhardskills'}>
+            <Link to={'/'}>
               <AiOutlineInstagram size={40}/>
-            </a>
+            </Link>
 
             <div className={'lg:flex flex-col'}>
-              <a href={'/newhardskills'}
-                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</a>
-              <a href={'/newhardskills'}
-                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</a>
+              <Link to={'/'}
+                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</Link>
+              <Link to={'/'}
+                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</Link>
             </div>
 
           </div>

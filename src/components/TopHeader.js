@@ -24,8 +24,8 @@ const TopHeader = () => {
             специализации.</p>
           <div
             className={'flex flex-col sm:flex-row justify-center items-center mt-6  sm:mt-[2rem] 2xl:mt-[4rem]   text-white '}>
-            <a href={'/newhardskills'}
-               className={'border-2 border-[#24cd03] w-[250px] rounded-md font-bold mx-4 my-4  mx-auto py-3 '}>Записаться</a>
+            <Link to={'/'}
+               className={'border-2 border-[#24cd03] w-[250px] rounded-md font-bold mx-4 my-4  mx-auto py-3 '}>Записаться</Link>
             <Link to={'/contract'}
                   className={'border-2 border-[#24cd03] w-[250px] rounded-md font-bold mx-4 my-4  mx-auto  py-3 '}>Получить
               консультацию</Link>
