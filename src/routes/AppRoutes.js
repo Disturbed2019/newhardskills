@@ -14,7 +14,7 @@ const AppRoutes = () => {
   return (
 
       <Routes>
-          <Route path={'/newhardskills'} element={<Main/>}/>
+          <Route path={'/'} element={<Main/>}/>
           <Route path={'/contract'} element={<ContractPage/>}/>
           <Route path={'/404'} element={<PageNotFound/>}/>
           <Route path={'/courses'} element={<CoursesPage/>}/>
