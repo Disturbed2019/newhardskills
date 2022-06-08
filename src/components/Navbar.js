@@ -32,7 +32,7 @@ const Navbar = () => {
     <header className={`bg-black/80 text-white top-0 left-0 right-0 z-10 ${navStick}`}>
       <div
         className={'flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 '}>
-        <Link to={'/newhardskills'} className={''}>
+        <Link to={'/'} className={''}>
           <img className={'w-[150px] sm:w-[200px]'} src={Logo} alt="logo" width={266} height={70}/>
         </Link>
         {/*<div className={'hidden md:flex col-span-2'}>*/}
@@ -50,9 +50,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className={'p-4'}>
-              <a href={'/courses'}>
+              <Link to={'/courses'}>
                 Курсы
-              </a>
+              </Link>
             </li>
             <li className={'p-4'}>
                 <Link to={'/contract'}>

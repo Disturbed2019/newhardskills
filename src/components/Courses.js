@@ -3,6 +3,7 @@ import java from '../assets/images/java.png'
 import python from '../assets/images/python.png'
 import ba from '../assets/images/ba.png'
 import hr from '../assets/images/hr.png'
+import {Link} from "react-router-dom";
 // import {Link} from "react-router-dom";
 
 const Courses = () => {
@@ -48,7 +49,7 @@ const Courses = () => {
             </div>
            <div className={'flex justify-between flex-col'}>
              <h3 className={'text-2xl font-bold text-center py-8'}>{item.course_name}</h3>
-             <a href={'/courses/' + item.name}  className={'bg-[#24cd03] w-[200px] text-white text-center font-bold rounded-md font-medium mx-auto my-6 py-3'}>Подробнее</a>
+             <Link to={'/courses/' + item.name}  className={'bg-[#24cd03] w-[200px] text-white text-center font-bold rounded-md font-medium mx-auto my-6 py-3'}>Подробнее</Link>
            </div>
           </div>
         ))}
