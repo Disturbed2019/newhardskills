@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu, AiOutlineHome, AiOutlineInstagram} from "react-icons/ai";
 import Logo from '../assets/images/logo.png'
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [navStick, setNavStick] = useState('relative')
+  let activeClass = 'text-[#23cd03]'
 
 
   const handleNav = () => {
@@ -45,25 +46,45 @@ const Navbar = () => {
             {/*  </a>*/}
             {/*</li>*/}
             <li className={'p-4'}>
-              <Link to={'/'}>
+              <NavLink
+                to={'/'}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
                 О нас
-              </Link>
+              </NavLink>
             </li>
             <li className={'p-4'}>
-              <Link to={'/courses'}>
+              <NavLink
+                to={'/courses'}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
                 Курсы
-              </Link>
+              </NavLink>
             </li>
             <li className={'p-4'}>
-                <Link to={'/contract'}>
-                    Договор
-                </Link>
+              <NavLink
+                to={'/contract'}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
+                Договор
+              </NavLink>
             </li>
 
             <li className={'p-4'}>
-              <Link to={'/'}>
+              <NavLink
+                to={'/'}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
                 Контакты
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <div className={'hidden lg:flex items-center'}>
@@ -73,9 +94,9 @@ const Navbar = () => {
 
             <div className={'lg:flex flex-col'}>
               <Link to={'/'}
-                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</Link>
+                    className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</Link>
               <Link to={'/'}
-                 className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</Link>
+                    className={'inline px-2 text-xl font-bold hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</Link>
             </div>
 
           </div>
@@ -88,32 +109,68 @@ const Navbar = () => {
         </div>
         <div
           className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%] '}>
-          <a href={'/'} className={'w-full flex justify-center items-center p-4'}>
+          <Link to={'/'} className={'w-full flex justify-center items-center p-4'}>
             <img src={Logo} alt="logo" width={266} height={70}/>
-          </a>
+          </Link>
           <ul className={'p-4 uppercase'}>
             {/*<li className={'p-4 border-b border-gray-600'}>Главная</li>*/}
-            <li className={'p-4 border-b border-gray-600'}>О нас</li>
-            <li className={'p-4 border-b border-gray-600'}>
-              <Link to={'/newhardskills/courses'} onClick={closeMobileMenu}>Курсы</Link>
+            <li className={'p-4 border-b border-gray-600 font-bold'}>
+              <NavLink
+                to={'/'}
+                onClick={closeMobileMenu}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
+                О нас
+              </NavLink>
             </li>
-            <li className={'p-4 border-b border-gray-600'}>
-              <Link to={'/contract'} onClick={closeMobileMenu}>Договор</Link>
+            <li className={'p-4 border-b border-gray-600 font-bold'}>
+              <NavLink
+                to={'/courses'}
+                onClick={closeMobileMenu}
+                className={({isActive}) =>
+                isActive ? activeClass : null
+              }
+              >
+                Курсы
+              </NavLink>
+            </li>
+            <li className={'p-4 border-b border-gray-600 font-bold'}>
+              <NavLink
+                to={'/contract'}
+                onClick={closeMobileMenu}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
+                Договор
+              </NavLink>
             </li>
 
-            <li className={'p-4'}>Контакты</li>
+            <li className={'p-4 font-bold'}>
+              <NavLink
+                to={'/'}
+                onClick={closeMobileMenu}
+                className={({isActive}) =>
+                  isActive ? activeClass : null
+                }
+              >
+                Контакты
+              </NavLink>
+            </li>
           </ul>
           <div className={'p-4 flex flex-col text-3xl items-center'}>
             <h6 className={'text-sm sm:text-xl  flex justify-center items-center'}>
               <AiOutlineHome size={20} className={'mr-2'}/>
               Наши контакты</h6>
-            <a href={'/newhardskills'}
+            <a href={'/'}
                className={'inline p-2 text-xl sm:text-3xl hover:text-[#24cd03] ease-in-out duration-300'}>+375292643717</a>
-            <a href={'/newhardskills'}
+            <a href={'/'}
                className={'inline p-2 text-xl sm:text-3xl hover:text-[#24cd03] ease-in-out duration-300'}>+375292988440</a>
           </div>
           <div className={'flex justify-center items-center'}>
-            <a href={'/newhardskills'}>
+            <a href={'/'}>
               <AiOutlineInstagram size={40}/>
             </a>
           </div>

@@ -14,10 +14,10 @@ const TopCourses = ({data}) => {
             <p className={'md:text-2xl text-md text-gray-400'}>Научим  {data.name} с нуля! </p>
           </div>
           <div className={'flex flex-col p-4 border-2 border-[#ffffff] rounded-xl mt-10 md:mt-0 text-center'}>
-            <div className={'flex flex-col justify-center items-center '}>
-              <p className={'md:text-2xl text-md m-2 '}>Старт группы</p>
-              <span className={'text-2xl md:text-xl text-[#24cd03] font-light'}>{data.dateStart}</span>
-            </div>
+            {/*<div className={'flex flex-col justify-center items-center '}>*/}
+            {/*  <p className={'md:text-2xl text-md m-2 '}>Старт группы</p>*/}
+            {/*  <span className={'text-2xl md:text-xl text-[#24cd03] font-light'}>{data.dateStart}</span>*/}
+            {/*</div>*/}
             <div className={'flex flex-col justify-center items-center'}>
               <p className={'md:text-2xl text-md m-2'}>Дни и время занятий:</p>
               <span className={'text-2xl md:text-xl text-[#24cd03] font-light'}>{data.day}</span>

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Tabs = ({activeTab}) => {
-  console.log(activeTab)
   return (
     <div className={'mt-8'}>
       <div className={`mb-4 ${activeTab === 1 ? 'block' : 'hidden'}`}>

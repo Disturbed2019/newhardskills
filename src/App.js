@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [visible, setVisible] = useState(false)
 
+
   const scrollToTop = () => {
     if (window.scrollY >= 700) {
       setVisible(true)
@@ -19,13 +20,14 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', scrollToTop)
   })
+
+
   return (
     <>
       <Navbar/>
       <main>
         <AppRoutes/>
       </main>
-
       <Footer/>
       {visible ? <ScrollToTop/> : null}
     </>
