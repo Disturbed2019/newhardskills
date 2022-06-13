@@ -4,6 +4,8 @@ import python_bg from '../assets/images/python/python_bg.jpg'
 import Education from "../components/Courses/Education";
 import {pageTop} from "../utils/functions";
 import PythonDescription from "../components/Courses/python/PythonDescription";
+import PythonProgram from "../components/Courses/python/PythonProgram";
+import Teachers from "../components/Teachers";
 
 const PythonPage = () => {
   const python = {
@@ -23,6 +25,8 @@ const PythonPage = () => {
       <TopCourses data={python}/>
       <PythonDescription />
       <Education />
+      <PythonProgram/>
+      <Teachers/>
     </>
   );
 };

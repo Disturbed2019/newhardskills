@@ -52,7 +52,7 @@ const Navbar = () => {
                   isActive ? activeClass : null
                 }
               >
-                О нас
+                Главная
               </NavLink>
             </li>
             <li className={'p-4'}>
@@ -122,7 +122,7 @@ const Navbar = () => {
                   isActive ? activeClass : null
                 }
               >
-                О нас
+                Главная
               </NavLink>
             </li>
             <li className={'p-4 border-b border-gray-600 font-bold'}>

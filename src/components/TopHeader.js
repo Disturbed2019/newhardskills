@@ -6,9 +6,10 @@ const TopHeader = () => {
   return (
     <div className={' w-full h-[600px] md:h-[650px] 2xl:h-[850px] relative '}>
       <img src={bg} alt="" className='w-full h-full object-cover absolute'/>
+
       <div className='absolute w-full h-full bg-black/75'></div>
       <div
-        className={'text-center flex flex-col justify-center items-center p-4 mx-auto absolute top-[60%] md:top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2'}>
+        className={'text-center flex flex-col justify-center items-center p-4 mx-auto absolute top-[60%] md:top-[50%] left-[50%] -translate-y-2/3 -translate-x-1/2'}>
         <h1
           className={'w-full text-4xl  sm:text-6xl  md:text-7xl   leading-[1.2] sm:leading-[1.2]  md:leading-[1.2] font-bold md:py-6 text-center'}>Профессиональные
           IT курсы

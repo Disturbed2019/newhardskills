@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import java from "../assets/images/java.png";
 import python from "../assets/images/python.png";
 import ba from "../assets/images/ba.png";
 import hr from "../assets/images/hr.png";
 import {Link} from "react-router-dom";
+import {pageTop} from "../utils/functions";
 
 const CoursesPage = () => {
   const coursesPreview = [
@@ -28,6 +29,9 @@ const CoursesPage = () => {
       img: hr,
     },
   ]
+  useEffect(()=> {
+    pageTop()
+  }, [])
   return (
     <div className={'max-w-[1240px] mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4'}>
       {coursesPreview.map(item => (
